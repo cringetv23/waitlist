@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Signin</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script2.js"> </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box">
+                <h1> Sign In</h1>
+                <form id="form" action="/"> 
+
+                    <div class="input-field">
+                        <input type="text" id="email" name="email"  placeholder="Input Email">
+                        <div class="error"> </div>
+                        <!--the div class "error" validates 
+                    the email to check whether it is correct or incorrect-->
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="password" id="password" placeholder="Input Password">
+                    <div class="error"> </div>
+                    <!--the div class "error" validates the password-->
+                    </div>
+
+                    <div class="input-group">
+                        <div class="btn-field">
+                            <button type="submit" id="signinBtn">Sign In</button>
+                        </div>
+
+                        <div class="TT">
+                            <p> Or </p>
+                            <!--for the 'Or' below the sign up button-->
+                        </div>
+        
+                        <div class="black">
+                            <button type="button"> Sign in with Apple</button>
+                            <!--for the button to sign in with apple-->
+                           </div>
+               
+                           <div class="black">
+                               <button type="button"> Sign in with Google</button>
+                               <!--for the button to sign up with google-->
+                              </div>
+
+                        <div class="linker">
+                        <p> Don't have an account? <a href="signup.html">Sign up</a></p>
+                                    <!--links the signin page with the sign up-->
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

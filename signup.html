@@ -1,49 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.o" />
-<link rel="stylesheet" href="style.css" />
-<script> href="script.js"</script> 
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign up</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"> </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box">
+            <!--contians everything in the signinbox-->
+            <h1> Sign Up</h1>
+            <form id="form" action="/">
 
-</head>
-
-<body>
-    <div class="container">
-
-    <div class="outer">
-
-    <div class="fcontainer">
-        <form id="form" action="/">
-            <h1> Join-Waitlist </h1>
-            <div class="input-control">
-                <label for="name">Name </label>
-                <input id="name" name="name" type="text" /required>
-                <div class="error"></div>
+            <div class="input-field">
+                <input type="text" id="email" name="email" placeholder="Input Email">
+                <div class="error"> </div>
+                <!--the div class "error" validates 
+                    the email to check whether it is correct or incorrect-->
             </div>
-            <div class="input-control">
-                <label for="username">Username </label>
-                <input id="username" name="username" type="text" /required>
-                <div class="error"></div>
+
+            <div class="input-field">
+                <input type="password" id="password" name="password" placeholder="Input Password">
+            </div>
+            <div class="error"></div>
+             <!--the div class "error" validates the password-->
+
+            <div class="input-field">
+                <input type="password" id="password2" name="password2" placeholder="Retype Password">
+            <div class="error"> </div>
+            <!--the div class "error" validates the retype password to 
+                check whether it is the same with the first password -->
+            </div>
+
+            <div class="input-group">
+                <div class="btn-field">
+                    <button type="submit" id="signupBtn">Sign Up</button>
+                    <!--the sign up button that the user clicks to sign up-->
                 </div>
-                <div class="input-control">
-                    <label for="email">Email </label>
-                    <input id="email" name="email" type="email">
-                    <div class="error"></div>
-                    </div>
-                    <button type="submit"> Join-Waitlist Now</button>
-                    
-                </form>
-                
-    </div>
 
-    
+                <div class="TT">
+                    <p> Or </p>
+                    <!--for the 'Or' below the sign up button-->
+                </div>
+
+                <div class="black">
+                    <button type="button"> Sign up with Apple</button>
+                    <!--for the button to sign up with apple-->
+                   </div>
+       
+                   <div class="black">
+                       <button type="button"> Sign up with Google</button>
+                       <!--for the button to sign up with google-->
+                      </div>
+       
+                 <div class="linker">
+                <p> Already have an account? <a href="signin.html">Sign in</a></p>
+                            <!--links the signin page with the sign up-->
+            </div>
+
            
-</div>
-</div>
- 
-
-</body>
-
+            </form>
+            </div>
+        </div>
+    </body>
+   
 </html>
